@@ -22,9 +22,9 @@ What are indexing and slicing in Python
 
 What is the official Holberton Python coding style and how to check your code with PEP 8
 
-Requirements
+# Requirements
+Python Scripts
 -----------
-# Python Scripts
 Allowed editors: vi, vim, emacs
 
 All your files will be interpreted/compiled on Ubuntu 
@@ -44,7 +44,8 @@ All your files must be executable
 
 The length of your files will be tested using wc
 
-# Shell Scripts
+Shell Scripts
+--------
 Allowed editors: vi, vim, emacs
 
 All your scripts will be tested on Ubuntu 14.04 LTS
