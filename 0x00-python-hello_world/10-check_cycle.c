@@ -15,7 +15,7 @@ listint_t *tmp;
     {
         return (0);
     }
-    while(lists)
+    while(list)
     {
         tmp = list;
         list = list->next;
