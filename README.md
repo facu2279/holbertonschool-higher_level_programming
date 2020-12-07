@@ -80,3 +80,9 @@ The prototypes of all your functions should be included in your header file call
 Don’t forget to push your header file
 
 All your header files should be include guarded
+
+# Authors
+
+Made by Facundo Diaz for Holberton School
+
+Cohort 13 - December 2020
