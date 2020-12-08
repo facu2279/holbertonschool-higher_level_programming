@@ -8,6 +8,5 @@ for i in range(1, 101):
         print("Buzz", end="")
     else:
         print("{:d}".format(i), end="")
-    if i != 100:
-        print(" ", end="")
+    print(" ", end="")
 print()
