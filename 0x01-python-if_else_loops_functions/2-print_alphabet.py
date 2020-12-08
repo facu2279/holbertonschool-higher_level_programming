@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-alphabet = "abcdefghijklmnopqrstuvwxyzguillaume"
+alphabet = "abcdefghijklmnopqrstuvwxyz"
 print(alphabet, end="")
