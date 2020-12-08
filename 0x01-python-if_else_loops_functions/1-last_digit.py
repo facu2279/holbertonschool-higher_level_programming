@@ -11,7 +11,7 @@ if negativo == 1:
     number = number * -1
     lastdigit = lastdigit * -1
 print("Last digit of", '{:d}'.format(number), end="")
-print("is", '{:d}'.format(lastdigit), end="")
+print(" is", '{:d}'.format(lastdigit), end="")
 if lastdigit > 5:
     print(" and is greater than 5")
 elif lastdigit < 6:
