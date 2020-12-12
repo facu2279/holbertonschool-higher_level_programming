@@ -82,7 +82,9 @@ Don’t forget to push your header file
 All your header files should be include guarded
 
 # Authors
+Made by [Facundo Diaz](https://github.com/facu2279) to Holberton School 2020
 
-Made by Facundo Diaz for Holberton School
-
-Cohort 13 - December 2020
+Social Networks
+-------------------
+- [Linkedin](https://www.linkedin.com/in/facundo-d%C3%ADaz-720110149/)
+- [Twitter](https://twitter.com/facudiazuy)

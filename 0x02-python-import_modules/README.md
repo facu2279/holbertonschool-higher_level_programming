@@ -36,7 +36,9 @@ All your files must be executable
 The length of your files will be tested using wc
 
 # Authors
+Made by [Facundo Diaz](https://github.com/facu2279) to Holberton School 2020
 
-Made by Facundo Diaz for Holberton School
-
-Cohort 13 - December 2020
+Social Networks
+-------------------
+- [Linkedin](https://www.linkedin.com/in/facundo-d%C3%ADaz-720110149/)
+- [Twitter](https://twitter.com/facudiazuy)
