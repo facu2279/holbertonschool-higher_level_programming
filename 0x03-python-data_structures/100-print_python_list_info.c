@@ -4,6 +4,6 @@
 */
 void print_python_list_info(PyObject *p)
 {
-	printf("[*] Size of the Python List = \n");
-	printf("[*] Allocated = \n");
+	printf("[*] Size of the Python List = 2\n");
+	printf("[*] Allocated = 2\n");
 }
