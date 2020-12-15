@@ -5,7 +5,7 @@
 */
 void print_python_list_info(PyObject *p)
 {
-    int tope, i, cant = 0;
+    int tope, i = 0, cant = 0;
     /*
     *char *tipo;
     */
