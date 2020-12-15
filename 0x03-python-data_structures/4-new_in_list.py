@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 def new_in_list(my_list, idx, element):
-    if idx >= len(my_list) or idx < 0:
-        return my_list
+    tope = len(my_list)
+    if idx >= tope:
+        return (my_list)
+    elif idx < 0:
+        return (my_list)
     else:
-        my_list2 = my_list.copy()
-        my_list2[idx] = element
-        return my_list2
+        copia = my_list.copy()
+        copia[idx] = element
+        return (copia)
