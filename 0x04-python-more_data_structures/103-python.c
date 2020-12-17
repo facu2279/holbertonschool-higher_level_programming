@@ -1,7 +1,7 @@
 #include <Python.h>
 /**
- * print_python_list - Prints basic info about Python lists.
- * @p: A PyObject list object.
+ * print_python_list -  print list.
+ * @p: pyobject.
  */
 void print_python_bytes(PyObject *p);
 void print_python_list(PyObject *p)
