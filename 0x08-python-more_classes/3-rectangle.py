@@ -10,7 +10,7 @@ class Rectangle:
         self.width = width
 
     def __str__(self):
-        """ return a string """
+        """ return string """
         rep = ""
         if not self.area():
             return (rep)
