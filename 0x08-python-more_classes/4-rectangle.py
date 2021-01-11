@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    """ class rectangle """
+    """ class Rectangle """
     def __init__(self, width=0, height=0):
         """ initiates fields """
         self.height = height
