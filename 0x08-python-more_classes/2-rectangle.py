@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" Create a Rectangle class """
+""" Rectangle class """
 
 
 class Rectangle:
-    """ build upon a previous project: methods(area, perimeter) """
+    """ class rectangle """
     def __init__(self, width=0, height=0):
         """ initiate fields """
         self.height = height
@@ -12,7 +12,7 @@ class Rectangle:
     @property
     def width(self):
         """ returns width """
-        return self.__width
+        return (self.__width)
 
     @width.setter
     def width(self, value):
@@ -26,7 +26,7 @@ class Rectangle:
     @property
     def height(self):
         """ returns height """
-        return self.__height
+        return (self.__height)
 
     @height.setter
     def height(self, value):
@@ -39,10 +39,10 @@ class Rectangle:
 
     def area(self):
         """ returns the area of the rectangle """
-        return self.width * self.height
+        return (self.width * self.height)
 
     def perimeter(self):
         """ returns the perimeter of the rectangle """
         if self.width is 0 or self.height is 0:
-            return 0
+            return (0)
         return (2 * self.width) + (2 * self.height)
