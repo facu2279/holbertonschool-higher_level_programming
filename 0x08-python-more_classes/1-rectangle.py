@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    """Rectangle class"""
+"""Rectangle class"""
 
     def __init__(self, width=0, height=0):
         """xd"""
@@ -32,7 +32,7 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """xd"""
-        if type(value) not in [float, int]:
+        if type(value) != int or type(value) != float:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
