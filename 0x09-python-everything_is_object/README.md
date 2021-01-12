@@ -13,6 +13,7 @@ BTW, have you ever modified a variable without knowing it or wanting to? I mean:
 >>> b
 1
 >>> 
+
 OK. But what about this?
 
 >>> l = [1, 2, 3]
