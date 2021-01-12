@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-def magic_string(newList=[]):
-    newList = newList + ["Holberton"]
-    return ", ".join(newList)
+def magic_string(xd=[]):
+    xd = xd + ["Holberton"]
+    return (", ".join(xd))
