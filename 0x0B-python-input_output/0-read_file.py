@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 def read_file(filename=""):
-    for line in open(filename):
-        print(line)
+    with open(filename) as file:
+        for line in file:
+            print(line)
