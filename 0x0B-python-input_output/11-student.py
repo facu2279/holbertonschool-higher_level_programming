@@ -14,14 +14,14 @@ class Student:
     def to_json(self, attrs=None):
         """ def """
         new = {}
-        if attrs == None:
+        if attrs is None:
             return self.__dict__
         else:
             for i in attrs:
                 if i in self.__dict__:
                     new[i] = self.__dict__[i]
             return new
-    
+
     def reload_from_json(self, json):
         for i in json:
             self.__dict__[i] = json[i]

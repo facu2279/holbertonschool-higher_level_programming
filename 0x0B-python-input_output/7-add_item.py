@@ -13,7 +13,7 @@ if (os.path.isfile("add_item.json")):
 else:
     my_list = []
 
-for i in range(1,len(sys.argv)):
+for i in range(1, len(sys.argv)):
     my_list.append(sys.argv[i])
 
 save_to_json_file(my_list, "add_item.json")

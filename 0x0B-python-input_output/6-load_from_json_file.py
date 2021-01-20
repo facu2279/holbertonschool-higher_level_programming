@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """ class Student """
-
-
 import json
+
 
 def load_from_json_file(filename):
     """ class Student """
