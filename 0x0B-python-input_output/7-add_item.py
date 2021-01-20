@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" class Student """
+
 
 import json
 import os.path
