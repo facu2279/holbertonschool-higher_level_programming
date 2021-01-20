@@ -4,4 +4,4 @@ def write_file(filename="", text=""):
     with open(filename, "w") as file:
         for line in text:
             cont = cont + len(line)
-        return cont
+        return (cont)
