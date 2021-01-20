@@ -1,72 +1,66 @@
-The  ``7-base_geometry.txt`` module
-======================
-Using ``BaseGeometry``
--------------------
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-Importing the function from the module:
 
->>> BaseGeometry = __import__("7-base_geometry").BaseGeometry    
-
-Checking for module docstring:
->>> m = __import__("7-base_geometry").__doc__
->>> len(m) > 1
-True    
-
-Checking for function docstring:
-
->>> f = __import__("7-base_geometry").BaseGeometry.__doc__
->>> len(f) > 1
-TrueNo Arguments passed:
-    
 >>> bg = BaseGeometry()
+>>> isinstance(bg, BaseGeometry)
+True
+
+>>> bg.integer_validator("my_int", 12)
+
+
 >>> bg.integer_validator()
 Traceback (most recent call last):
 ...
 TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
-Correct Output:
-
->>> bg = BaseGeometry()
->>> bg.integer_validator("hola", 10)2 Strings Output:
-
->>> bg = BaseGeometry()
->>> bg.integer_validator("hola", "chau")
+>>> bg.integer_validator("num")
 Traceback (most recent call last):
 ...
-TypeError: hola must be an integer3 Arguments Output:
+TypeError: integer_validator() missing 1 required positional argument: 'value'
 
->>> bg = BaseGeometry()
->>> bg.integer_validator("hola", "chau", 55)
+>>> bg.integer_validator("num", -10)
 Traceback (most recent call last):
 ...
-TypeError: integer_validator() takes 3 positional arguments but 4 were given
+ValueError: num must be greater than 0
 
-2 Integers Output:
-
->>> bg = BaseGeometry()
->>> bg.integer_validator(68, 55)Empty String Output:
->>> bg = BaseGeometry()
->>> bg.integer_validator("", 55)
-
-None Output:
->>> bg = BaseGeometry()
->>> bg.integer_validator(None, None)
+>>> bg.integer_validator("num","ten")
 Traceback (most recent call last):
 ...
-TypeError: None must be an integer
+TypeError: num must be an integer
 
-0 Output:
 
->>> bg = BaseGeometry()
->>> bg.integer_validator("Hola", 0)
+>>> bg.integer_validator("num", 0)
 Traceback (most recent call last):
 ...
-TypeError: Hola must be greater than 0
+ValueError: num must be greater than 0
 
-Less than 0 Output:
-
->>> bg = BaseGeometry()
->>> bg.integer_validator("Hola", -1)
+>>> bg.area()
 Traceback (most recent call last):
 ...
-TypeError: Hola must be greater than 0
+Exception: area() is not implemented
+
+>>> bg.integer_validator("age", (1,))
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+
+>>> bg.integer_validator("age", [3])
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+>>> bg.integer_validator("age", True)
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+>>> bg.integer_validator("age", {3, 4})
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+>>> bg.integer_validator("age", None)
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
