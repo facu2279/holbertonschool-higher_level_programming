@@ -65,12 +65,12 @@ Python Unit Test
 
 # Folders and files
 - Models
-* base.py
-* rectangle.py
-* squeare.py
-* __init__.py
+    * base.py
+    * rectangle.py
+    * squeare.py
+    * __init__.py
 - Test
-* empty
+    * empty
 
 # Authors
 Made by [Facundo Diaz](https://github.com/facu2279) to Holberton School 2021
