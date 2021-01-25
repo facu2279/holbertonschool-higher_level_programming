@@ -103,3 +103,8 @@ class Rectangle(Base):
                 if key == "y":
                     self.intvalidator("y", val)
                     self.__y = val
+    
+    def to_dictionary(self):
+        """ create a dictionary """
+        my_dictionary = {"x": self.__x, "y": self.__y, "id": self.id, "width": self.__width, "height": self.__height}
+        return (my_dictionary)
