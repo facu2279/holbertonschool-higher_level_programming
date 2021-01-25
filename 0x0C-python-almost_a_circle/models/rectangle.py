@@ -50,3 +50,6 @@ class Rectangle(Base):
     def y(self, value):
         self.intvalidator("y", value)
         self.__y = value
+    
+    def area(self):
+        return (self.__width * self.__height)

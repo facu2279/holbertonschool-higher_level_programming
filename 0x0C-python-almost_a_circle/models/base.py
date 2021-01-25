@@ -22,3 +22,4 @@ class Base:
             raise ValueError("{} must be > 0".format(name))
         elif value < 0 and (name == "x" or name == "y"):
             raise ValueError("{} must be >= 0".format(name))
+    
