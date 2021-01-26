@@ -3,6 +3,7 @@
 from models.rectangle import Rectangle
 from models.base import Base
 import sys
+import csv
 
 
 class Square(Rectangle):
@@ -14,21 +15,23 @@ class Square(Rectangle):
 
     @property
     def size(self):
-        """ def """
+        """ def size """
         return self.__size
 
     @size.setter
     def size(self, value):
-        """ def """
+        """ set size """
         self.intvalidator("width", value)
         self.__size = value
 
     def __str__(self):
-        """ def """
+        """ parse object to str """
         return "[Square] ({}) {}/{} - {}".format(self.id, self._Rectangle__x,
-                                                self._Rectangle__y, self.__size)
-    def update(self, *args, **kwargs):
+                                                 self._Rectangle__y,
+                                                 self.__size)
 
+    def update(self, *args, **kwargs):
+        """ upadate function"""
         if args and len(args) > 0:
             if len(args) > 0:
                 self.id = args[0]
@@ -54,6 +57,9 @@ class Square(Rectangle):
                 if key == "y":
                     self.intvalidator("y", val)
                     self._Rectangle__y = val
+
     def to_dictionary(self):
-        my_dictionary = {"x": self._Rectangle__x, "y": self._Rectangle__y, "id": self.id, "size": self.__size}
+        """ transform object to dictionary"""
+        my_dictionary = {"x": self._Rectangle__x, "y": self._Rectangle__y,
+                         "id": self.id, "size": self.__size}
         return (my_dictionary)
