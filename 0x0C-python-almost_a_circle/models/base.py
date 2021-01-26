@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ define a class Base """
+import json
 
 
 class Base:
@@ -23,3 +24,9 @@ class Base:
         elif value < 0 and (name == "x" or name == "y"):
             raise ValueError("{} must be >= 0".format(name))
     
+    def to_json_string(list_dictionaries):
+        """ return string """
+        if list_dictionaries == None:
+            return "[]"
+        else:
+            return (json.dumps(list_dictionaries))
