@@ -24,6 +24,7 @@ class Base:
         elif value < 0 and (name == "x" or name == "y"):
             raise ValueError("{} must be >= 0".format(name))
     
+    @staticmethod
     def to_json_string(list_dictionaries):
         """ return string """
         if list_dictionaries == None:
@@ -45,9 +46,43 @@ class Base:
                 lista = Base.to_json_string(lista)
                 file.write(lista)
     
+    @staticmethod
     def from_json_string(json_string):
         """ class Student """
         string = []
         if json_string is not None and json_string == "":
             string = json.loads(json_string)
         return (string)
+    
+    @classmethod
+    def create(cls, **dictionary):
+        """ returns an instance with all attributes already set """
+        if (cls.__name__ == "Square"):
+            a = cls(1)
+        elif (cls.__name__ == "Rectangle"):
+            a = cls(1, 1)
+        a.update(**dictionary)
+        return a
+
+    @classmethod
+    def load_from_file_csv(cls):
+        '''
+        classmethod load_to_file
+        '''
+        lists = []
+        filename = cls.__name__ + ".csv"
+        try:
+            with open(filename, 'r') as f:
+                csv_reader = csv.reader(f, delimiter=',')
+                for args in csv_reader:
+                    if cls.__name__ is "Rectangle":
+                        dictionary = {"id": int(args[0]), "width": int(args[1]), "height": int(
+                            args[2]), "x": int(args[3]), "y": int(args[4])}
+                    elif cls.__name__ is "Square":
+                        dictionary = {"id": int(args[0]), "size": int(
+                            args[1]), "x": int(args[2]), "y": int(args[3])}
+                    obj = cls.create(**dictionary)
+                    lists.append(obj)
+                return (lists)
+        except Exception:
+            return (lists)
