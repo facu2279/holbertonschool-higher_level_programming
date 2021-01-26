@@ -44,3 +44,10 @@ class Base:
                     lista.append(cls.to_dictionary(obj))
                 lista = Base.to_json_string(lista)
                 file.write(lista)
+    
+    def from_json_string(json_string):
+        """ class Student """
+        string = []
+        if json_string is not None and json_string == "":
+            string = json.loads(json_string)
+        return (string)
