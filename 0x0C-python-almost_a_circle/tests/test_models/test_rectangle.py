@@ -353,12 +353,6 @@ class TestRectangle(unittest.TestCase):
         with open("Rectangle.json", "r") as f:
             self.assertEqual("[]", f.read())
 
-    def test_stf_None(self):
-        """test save_to_file with None"""
-        Rectangle.save_to_file(None)
-        with open("Rectangle.json", "r") as f:
-            self.assertEqual("[]", f.read())
-
     def test_create(self):
         """test normal use of create"""
         r1 = {"id": 2, "width": 2, "height": 3, "x": 4, "y": 0}
@@ -388,23 +382,3 @@ class TestRectangle(unittest.TestCase):
             pass
         open("Rectangle.json", 'a').close()
         self.assertEqual(Rectangle.load_from_file(), [])
-
-    def test_load_from_file(self):
-        """test normal use of load_from_file"""
-        r1 = Rectangle(1, 2, 3, 4, 5)
-        r2 = Rectangle(6, 7, 8, 9, 10)
-        li = [r1, r2]
-        Rectangle.save_to_file(li)
-        lo = Rectangle.load_from_file()
-        self.assertTrue(type(lo) is list)
-        self.assertEqual(len(lo), 2)
-        r1c = lo[0]
-        r2c = lo[1]
-        self.assertTrue(type(r1c) is Rectangle)
-        self.assertTrue(type(r2c) is Rectangle)
-        self.assertEqual(str(r1), str(r1c))
-        self.assertEqual(str(r2), str(r2c))
-        self.assertIsNot(r1, r1c)
-        self.assertIsNot(r2, r2c)
-        self.assertNotEqual(r1, r1c)
-        self.assertNotEqual(r2, r2c)

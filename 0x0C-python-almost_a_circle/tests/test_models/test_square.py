@@ -107,13 +107,6 @@ class TestSquare(unittest.TestCase):
         with self.assertRaises(TypeError):
             s = Square()
 
-    def test_size_typeerror(self):
-        """Test non-ints for size"""
-        with self.assertRaisesRegex(TypeError, "width must be an integer"):
-            s = Square("hello")
-        with self.assertRaisesRegex(TypeError, "width must be an integer"):
-            s = Square(True)
-
     def test_x_typeerror(self):
         """Test non-ints for x"""
         with self.assertRaisesRegex(TypeError, "x must be an integer"):
@@ -127,13 +120,6 @@ class TestSquare(unittest.TestCase):
             s = Square(1, 1, "hello")
         with self.assertRaisesRegex(TypeError, "y must be an integer"):
             s = Square(1, 1, True)
-
-    def test_size_valueerror(self):
-        """Test ints <= 0 for size"""
-        with self.assertRaisesRegex(ValueError, "width must be > 0"):
-            s = Square(-1)
-        with self.assertRaisesRegex(ValueError, "width must be > 0"):
-            s = Square(0)
 
     def test_x_valueerror(self):
         """Test ints < 0 for x"""
@@ -320,12 +306,6 @@ class TestSquare(unittest.TestCase):
         with open("Square.json", "r") as f:
             self.assertEqual("[]", f.read())
 
-    def test_stf_None(self):
-        """test save_to_file with None"""
-        Square.save_to_file(None)
-        with open("Square.json", "r") as f:
-            self.assertEqual("[]", f.read())
-
     def test_create(self):
         """test normal use of create"""
         s1 = {"id": 2, "size": 3, "x": 4, "y": 0}
@@ -355,23 +335,3 @@ class TestSquare(unittest.TestCase):
             pass
         open("Square.json", 'a').close()
         self.assertEqual(Square.load_from_file(), [])
-
-    def test_load_from_file(self):
-        """test normal use of load_from_file"""
-        s1 = Square(2, 3, 4, 5)
-        s2 = Square(7, 8, 9, 10)
-        li = [s1, s2]
-        Square.save_to_file(li)
-        lo = Square.load_from_file()
-        self.assertTrue(type(lo) is list)
-        self.assertEqual(len(lo), 2)
-        s1c = lo[0]
-        s2c = lo[1]
-        self.assertTrue(type(s1c) is Square)
-        self.assertTrue(type(s2c) is Square)
-        self.assertEqual(str(s1), str(s1c))
-        self.assertEqual(str(s2), str(s2c))
-        self.assertIsNot(s1, s1c)
-        self.assertIsNot(s2, s2c)
-        self.assertNotEqual(s1, s1c)
-        self.assertNotEqual(s2, s2c)
