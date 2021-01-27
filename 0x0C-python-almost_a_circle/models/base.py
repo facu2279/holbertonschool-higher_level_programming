@@ -3,6 +3,7 @@
 import json
 import csv
 
+
 class Base:
     """ class Base"""
     __nb_objects = 0
