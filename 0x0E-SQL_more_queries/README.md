@@ -1,6 +1,6 @@
 # 0x0D. SQL - Introduction
 
-![alt text](https://github.com/facu2279/holbertonschool-higher_level_programming/blob/main/0x0D-SQL_introduction/image.jpg)
+![alt text](https://github.com/facu2279/holbertonschool-higher_level_programming/blob/main/0x0E-SQL_more_queries/image.jpg)
 General
 --------
 
