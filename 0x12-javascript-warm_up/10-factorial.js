@@ -1,11 +1,11 @@
 #!/usr/bin/node
 const argv = process.argv;
-fact(parseInt(argv[2]));
+console.log(factorial(parseInt(argv[2])));
 
-function fact (a) {
-  if (isNaN(a)) {
-    console.log('1');
+function factorial (n) {
+  if (n == 0 || n == 1 || isNaN(n)) {
+    return 1;
   } else {
-    console.log(a * a);
+    return n * factorial(n - 1);
   }
 }
