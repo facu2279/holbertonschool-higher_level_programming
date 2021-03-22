@@ -1,6 +1,6 @@
 # 0x12. JavaScript - Warm up
 
-![alt text](https://github.com/facu2279/holbertonschool-higher_level_programming/)
+![alt text](https://github.com/facu2279/holbertonschool-higher_level_programming/blob/main/0x12-javascript-warm_up/java.png)
 
 General
 ---------
