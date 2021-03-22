@@ -1,13 +1,14 @@
 #!/usr/bin/node
-if (process.argv.length < 3)
-{
-    console.log('No argument');
+let i = 0;
+process.argv.forEach((val, index) => {
+  i++;
+});
+if (i === 2) {
+  console.log('No argument');
 }
-if (process.argv.length > 3)
-{
-    console.log('Arguments found');
+if (i === 3) {
+  console.log('Argument found');
 }
-if (process.argv.length === 3)
-{
-    console.log('Argument found');
+if (i > 3) {
+  console.log('Arguments found');
 }
