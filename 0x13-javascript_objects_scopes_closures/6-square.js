@@ -1,8 +1,8 @@
 #!/usr/bin/node
 
-const Square = require('./5-square');
+const viejo = require('./5-square');
 
-class xd extends Square {
+class Square extends viejo {
   constructor (size) {
     super(size, size);
     this.size = size;
@@ -17,4 +17,4 @@ class xd extends Square {
     }
   }
 }
-module.exports = xd;
+module.exports = Square;
