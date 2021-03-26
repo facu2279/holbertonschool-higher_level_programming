@@ -40,22 +40,49 @@ lists all states with a name starting with N (upper N) from database
 Takes in an argument and displays all values in the states table where name matches the argument.
 
 ### Task 3
+Takes in arguments and displays all values in the states table of hbtn_0e_0_usa where name matches the argument but that is safe because from MySQL injections!
 
 ### Task 4
+Lists all cities from the database
+
 ### Task 5
+Takes in the name of a state as an argument and lists all cities of that state, using database
+
 ### Task 6
+Python file that contains the class definition of a State and an instance Base = declarative_base()
+
 ### Task 7
+Lists all State objects from database
+
 ### Task 8
+Prints the first State object from database
+
 ### Task 9
+Lists all State objects that contain the letter a from database
+
 ### Task 10
+Prints the State object with the name passed as argument from database
+
 ### Task 11
+Adds the State object “Louisiana” to database
+
 ### Task 12
+Changes the name of a State object from database 
+
 ### Task 13
+Deletes all State objects with a name containing the letter a from database
+
 ### Task 14
+Python file similar to model_state.py named model_city.py that contains the class definition of a City
+
 ### Task 15
+Improve the files model_city.py and model_state.py, and save them as relationship_city.py and relationship_state.py
+
 ### Task 16
+Lists all State objects, and corresponding City objects
+
 ### Task 17
-### Task 18
+Lists all City objects from the database
 
 # Authors
 Made by [Facundo Diaz](https://github.com/facu2279) to Holberton School 2020
