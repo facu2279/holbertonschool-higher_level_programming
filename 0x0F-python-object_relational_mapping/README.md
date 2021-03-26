@@ -28,66 +28,34 @@ Requirements
 - A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
 - You are not allowed to use execute with sqlalchemy
 
-### Task Description
-Task 0
---------
+Task Description
+---------
+### Task 0
 List all the states of the hbtn_0e_0_usa database
 
-Task 1
---------
+### Task 1
 lists all states with a name starting with N (upper N) from database
 
-Task 2
---------
+### Task 2
 Takes in an argument and displays all values in the states table where name matches the argument.
 
-Task 3
---------
+### Task 3
 
-Task 4
---------
-
-Task 5
---------
-
-Task 6
---------
-
-Task 7
---------
-
-Task 8
---------
-
-Task 9
---------
-
-Task 10
---------
-
-Task 11
---------
-
-Task 12
---------
-
-Task 13
---------
-
-Task 14
---------
-
-Task 15
---------
-
-Task 16
---------
-
-Task 17
---------
-
-Task 18
---------
+### Task 4
+### Task 5
+### Task 6
+### Task 7
+### Task 8
+### Task 9
+### Task 10
+### Task 11
+### Task 12
+### Task 13
+### Task 14
+### Task 15
+### Task 16
+### Task 17
+### Task 18
 
 # Authors
 Made by [Facundo Diaz](https://github.com/facu2279) to Holberton School 2020
