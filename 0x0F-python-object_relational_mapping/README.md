@@ -1,6 +1,8 @@
 # 0x0F. Python - Object-relational mapping
 <br> ![alt text](https://github.com/facu2279/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/sqlpythonimage.jpg)
+
 <br><br>
+
 General
 -----------
 - Why Python programming is awesome
@@ -11,6 +13,7 @@ General
 - How to map a Python Class to a MySQL table
 
 <br><br>
+
 Requirements
 ------------
 - Allowed editors: vi, vim, emacs
@@ -28,7 +31,9 @@ Requirements
 - All your functions (inside and outside a class) should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')
 - A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
 - You are not allowed to use execute with sqlalchemy
+
 <br><br>
+
 Task Description
 ---------
 ### Task 0
@@ -84,10 +89,14 @@ Lists all State objects, and corresponding City objects
 
 ### Task 17
 Lists all City objects from the database
-<br>
+
+<br><br>
+
 # Authors
 Made by [Facundo Diaz](https://github.com/facu2279) to Holberton School 2020
-<br>
+
+<br><br>
+
 Social Networks
 -------------------
 - [Linkedin](https://www.linkedin.com/in/facundo-d%C3%ADaz-720110149/)
