@@ -5,10 +5,11 @@ if __name__ == "__main__":
 
     from sys import argv
     import MySQLdb
-    MY_USER = argv[1]
-    MY_PASS = argv[2]
-    MY_DB = argv[3]
-    nuevaconexion = MySQLdb.connect(user=MY_USER, passwd=MY_PASS, db=MY_DB)
+    MY_H = "localhost"
+    MY_U = argv[1]
+    MY_P = argv[2]
+    MY_D = argv[3]
+    nuevaconexion = MySQLdb.connect(host=MY_H, user=MY_U, passwd=MY_P, db=MY_D)
     consulta = nuevaconexion.cursor()
     consulta.execute("SELECT * FROM states")
     resultado = consulta.fetchall()
