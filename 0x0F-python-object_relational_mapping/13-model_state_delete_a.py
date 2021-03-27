@@ -14,6 +14,6 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     for instance in session.query(State).order_by(State.id):
-        if "a" in instance.name or "A" in instance.name:
+        if "a" in instance.name:
             session.delete(instance)
             session.commit()
