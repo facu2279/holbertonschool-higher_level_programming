@@ -12,7 +12,10 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    new_state = State(name="Louisiana", id=6)
+    for instance in session.query(State).order_by(State.id):
+        new_id = instance.id
+    new_id = new_id + 1
+    new_state = State(name="Louisiana", id=new_id)
     session.add(new_state)
     session.commit()
     print(new_state.id)
