@@ -5,7 +5,6 @@ from sys import argv
 import MySQLdb
 if __name__ == "__main__":
 
-
     MY_H = "localhost"
     MY_U = argv[1]
     MY_P = argv[2]
