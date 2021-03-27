@@ -15,4 +15,5 @@ if __name__ == "__main__":
     resultado = consulta.fetchall()
     for fila in resultado:
         print(fila)
+    consulta.close()
     nuevaconexion.close()
