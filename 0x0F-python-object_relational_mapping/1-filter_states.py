@@ -9,9 +9,9 @@ if __name__ == "__main__":
     MY_U = argv[1]
     MY_P = argv[2]
     MY_D = argv[3]
-    nuevaconexion = MySQLdb.connect(host=MY_H, user=MY_U, passwd=MY_P, db=MY_D)
+    nuevaconexion = MySQLdb.connect(host=MY_H, user=MY_U, passwd=MY_P, db=MY_D, port=3306)
     consulta = nuevaconexion.cursor()
-    consulta.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
+    consulta.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id")
     resultado = consulta.fetchall()
     for fila in resultado:
         print(fila)
