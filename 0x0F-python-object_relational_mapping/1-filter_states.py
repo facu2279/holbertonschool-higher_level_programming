@@ -15,7 +15,5 @@ if __name__ == "__main__":
     consulta.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
     resultado = consulta.fetchall()
     for fila in resultado:
-        if fila[1][0] == 'N':
-            print(fila)
-        """print(fila)"""
+        print(fila)
     nuevaconexion.close()
