@@ -14,8 +14,11 @@ if __name__ == "__main__":
     session = Session()
     i = 0
     for instance in session.query(State).order_by(State.id):
-        if i == 0:
-            print(instance.id, end="")
-            print(": ", end="")
-            print(instance.name)
-            i = 1
+        if instance:
+            if i == 0:
+                print(instance.id, end="")
+                print(": ", end="")
+                print(instance.name)
+                i = 1
+        else:
+            print("Nothing")
