@@ -17,6 +17,6 @@ if __name__ == "__main__":
     for estado in session.query(State).order_by(State.id):
         print(estado.id, end="")
         print(":", estado.name)
-        for city in session.query(City).filter(City.state_id == estado.id):
+        for city in estado.cities:
             print("    ", city.id, end="")
             print(":", city.name)
