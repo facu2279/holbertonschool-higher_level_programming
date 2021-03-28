@@ -18,5 +18,5 @@ if __name__ == "__main__":
         print(estado.id, end="")
         print(":", estado.name)
         for city in estado.cities:
-            print("    ", city.id, end="")
+            print("\t", city.id, end="")
             print(":", city.name)
