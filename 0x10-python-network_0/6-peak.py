@@ -1,9 +1,10 @@
-!/usr/bin/python3
-""" Made by Facundo Diaz for Holberton School 2021 """
+#!/usr/bin/python3
+""" function that finds a peak in a list of unsorted integers """
 
 
 def find_peak(int_list):
-    """ xd """
+    """ Finding the peak of a list """
+    """ Board cases """
 
     if len(int_list) == 0:
         return None
