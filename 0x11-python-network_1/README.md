@@ -1,7 +1,5 @@
 # 0x11. Python - Network #1
 
-![alt text](https://github.com/facu2279/holbertonschool-higher_level_programming/blob/main/0x12-javascript-warm_up/java.png)
-
 General
 ---------
 - How to fetch internet resources with the Python package urllib
