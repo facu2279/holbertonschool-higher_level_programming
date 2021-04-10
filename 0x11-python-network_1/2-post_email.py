@@ -9,5 +9,5 @@ if __name__ == "__main__":
     dict = {'email': argv[2]}
     elemento = parse.urlencode(dict).encode('utf-8')
     data = respuesta.Request(argv[1], elemento)
-    with request.urlopen(data) as res:
+    with respuesta.urlopen(data) as res:
         print(res.read().decode('utf-8'))
