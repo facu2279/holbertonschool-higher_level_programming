@@ -4,8 +4,8 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    user = sys.argv[1]
-    psw = sys.argv[2]
-    url = "https://api.github.com/user"
-    res = requests.get(url, auth=(user, psw))
+    userxd = sys.argv[1]
+    passxd = sys.argv[2]
+    link = "https://api.github.com/user"
+    res = requests.get(link, auth=(userxd, passxd))
     print(res.json().get('id'))
