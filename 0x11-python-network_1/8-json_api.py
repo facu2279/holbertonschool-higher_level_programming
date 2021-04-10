@@ -5,12 +5,12 @@ from sys import argv
 
 if __name__ == '__main__':
     if len(argv) == 2:
-        xd = argv[1]
+        q = argv[1]
     else:
-        xd = ""
-    res = requests.post('http://0.0.0.0:5000/search_user', data={'xd': xd})
+        q = ""
+    r = requests.post('http://0.0.0.0:5000/search_user', data={'q': q})
     try:
-        r_dict = res.json()
+        r_dict = r.json()
         id = r_dict.get('id')
         name = r_dict.get('name')
         if len(r_dict) == 0 or not id or not name:
